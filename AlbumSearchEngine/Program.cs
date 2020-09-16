@@ -17,8 +17,15 @@ namespace AlbumSearchEngine
 
             var itunesService = _serviceProvider.GetService<ITunesRepository>();
 
-            var app = new Application(itunesService);
-            await app.Start();
+            try
+            {
+                var app = new Application(itunesService);
+                await app.Start();
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
             await DisposeServices();
         }
