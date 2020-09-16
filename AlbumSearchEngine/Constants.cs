@@ -16,5 +16,11 @@
         public const string PARAMETR_TERM = "term";
 
         public const string ITUNES_SEARCH_URL = @"http://itunes.apple.com/search";
+
+        #region Country codes
+
+        public const string CODE_RU = "RU";
+
+        #endregion
     }
 }
