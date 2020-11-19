@@ -13,7 +13,7 @@ namespace AlbumSearchEngine
 
         private static async Task Main(string[] args)
         {
-            RegisterServices();
+            //RegisterServices();
 
             var itunesService = _serviceProvider.GetService<ITunesRepository>();
 
@@ -27,7 +27,7 @@ namespace AlbumSearchEngine
                 Console.WriteLine(ex.Message);
             }
 
-            await DisposeServices();
+            //await DisposeServices();
         }
 
         private static void RegisterServices()
