@@ -27,7 +27,7 @@ namespace AlbumSearchEngine
                 Console.WriteLine(ex.Message);
             }
 
-            await DisposeServices();
+            //await DisposeServices();
         }
 
         private static void RegisterServices()
